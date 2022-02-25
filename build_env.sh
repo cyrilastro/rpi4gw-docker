@@ -15,7 +15,3 @@ make download_sdk && make clean
 echo "*************************"
 echo "***** END OF SCRIPT *****"
 echo "*************************"
-
-
-
-
