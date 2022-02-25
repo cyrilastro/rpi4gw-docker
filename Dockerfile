@@ -72,8 +72,3 @@ RUN chmod +x build_env.sh
 
 # Initialisation
 CMD ["bash"]
-
-
-
-
-
