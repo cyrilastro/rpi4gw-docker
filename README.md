@@ -72,6 +72,6 @@ A shell script called ***build_env.sh*** is offered to you into /home/user conta
 This script will enter into flashloader and retro-go cloned git repos and will proceed for final building steps.
 Let's run for it
 ```
-$ cd ~/
+$ cd /home/user
 $ ./build_env.sh
 ```
