@@ -46,3 +46,8 @@ $ cd ~/workdir
 $ git clone https://github.com/cyrilastro/rpigw-docker
 $ cd rpigw-docker/
 ```
+Dockerfile will create "user" with exactly same UID & GID as your local host user. Really helpful to prevent some read/write file access right issues.
+To properly tag your Docker Image with your needs, please consider to change **#YOUR_DOCKER_REPO and #YOUR_IMAGE_NAME** as you wish in the build command below.
+```
+$ docker build --build-arg USER_ID=$(id -u) --build-arg GROUP_ID=$(id -g) -t #YOUR_DOCKER_REPO/#YOUR_IMAGE_NAME:latest .
+```
