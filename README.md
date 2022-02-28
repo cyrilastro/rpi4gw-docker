@@ -51,4 +51,4 @@ To properly tag your Docker Image with your needs, please consider to change **#
 ```
 $ docker build --build-arg USER_ID=$(id -u) --build-arg GROUP_ID=$(id -g) -t #YOUR_DOCKER_REPO/#YOUR_IMAGE_NAME:latest .
 ```
-***Building process under Raspberry Pi 3 could require up to 45min !***
+***Building process under Raspberry Pi 3 could require up to 45min to complete !***
