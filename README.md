@@ -21,16 +21,28 @@ Before to start building your docker image, please consider following requiremen
 
 ## Clone Game and Watch repos
 As the docker container will be mounted with local host folder, we will first start by cloning all Game and Watch repos into local host folder owned by user host user.
-Assume we create a "workdir" folder into "pi" home user space to store all repos
-```
-$ mkdir -p ~/workdir
-$ cd ~/workdir
-```
 I recommend to clone for those fantastic and awesome below repos :
 - [Game and Watch Backup](https://github.com/ghidraninja/game-and-watch-backup) from Ghidra Ninja
-- [Game and Watch Flashloader](https://github.com/ghidraninja/game-and-watch-flashloader.git) Ghidra Ninja
+- [Game and Watch Flashloader](https://github.com/ghidraninja/game-and-watch-flashloader.git) from Ghidra Ninja
 - [Game and Watch Patch](https://github.com/BrianPugh/game-and-watch-patch) from Brian Pugh
 - [Game and Watch Retro-go with NewUI](https://github.com/olderzeus/game-and-watch-retro-go) from olderzeus
 
 All of above repos will help you flashing your device with custom firmware and retro-go NewUI into upgraded EXT Flash module.
-**Remember to first backup your firmware and unlock your device BEFORE upgrading your 
+**Remember to first backup your firmware and unlock your device BEFORE upgrading your storage** [Take a look at this reddit Wiki for choosing the right mem chip](https://www.reddit.com/r/GameAndWatchMods/wiki/flash-upgrade)
+
+Assume we create a "workdir" folder into "pi" home user space to store all repos
+```
+$ mkdir -p ~/workdir
+$ cd ~/workdir
+$ git clone --recurse-submodules https://github.com/olderzeus/game-and-watch-retro-go
+$ git clone https://github.com/ghidraninja/game-and-watch-backup.git
+$ git clone https://github.com/ghidraninja/game-and-watch-flashloader.git
+$ git clone https://github.com/BrianPugh/game-and-watch-patch
+```
+## Building Docker image
+Let's go back into your user home folder and clone this repo.
+```
+$ cd ~/workdir
+$ git clone https://github.com/cyrilastro/rpigw-docker
+$ cd rpigw-docker/
+```
