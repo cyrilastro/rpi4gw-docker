@@ -103,6 +103,9 @@ $ make -j$(nproc) EXTFLASH_SIZE_MB=60 EXTFLASH_OFFSET=4194304 COVERFLOW=1 JPG_QU
 I decided to create this repo to help community using RPi 3 with Game and Watch.
 Even if I strictly have followed all Wiki, I faced many compiling issues and spent many hours to debug and fix all of its.
 I hope you will enjoy this sharing and if you wish to reward it, you can consider making BTC or ETH donation :grinning: :+1:
+
 My BTC wallet address :point_right: 1Jc5YFCnDwGh7ovAYHHXUbCDCi5UfPfuz8
+
 My ETH wallet address :point_right: 0xa69eb2b19e9c780ba68f6fe4f845829fa817837b
+
 Thanks a lot for your recognition !
