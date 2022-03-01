@@ -89,7 +89,7 @@ If you decide to start with a stock Game and Watch still locked, steps to follow
 - Use Game and Watch Patch repo to create custom firmware for Dual Boot.
 - Use Game and Watch Retro-Go NewUI repo.
 
-Shell command to use for uploading your custom firmware with Game and Watch Patch repo onto a 64Mb EXT Flash upgraded device. Consider to update arg ***--device=*** with your device.
+Shell command to use for uploading your custom firmware with Game and Watch Patch repo onto a 64Mb EXT Flash upgraded device. Consider to update arg ***--device=*** with your device type, mario or zelda.
 ```
 $ cd /opt/workdir/game-and-watch-patch
 $ make clean
