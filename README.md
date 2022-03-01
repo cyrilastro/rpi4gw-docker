@@ -75,3 +75,16 @@ Let's run for it
 $ cd /home/user
 $ ./build_env.sh
 ```
+
+## Next ?
+
+Your docker container is now ready to use with previously listed awesome Game and Watch github repos.
+If you decide to start with a stock Game and Watch still locked, steps to follow are :
+- Use Game and Watch Backup 5 scripts to backup, unlock and restore your device.
+- Recommend to physically upgrade your EXT Flash.
+- Use Game and Watch Patch repo to create custom firmware for Dual Boot.
+- Use Game and Watch Retro-Go NewUI repo.
+
+Shell command to use for uploading your custom firmware with Game and Watch Patch repo:
+```
+$ cd /opt/workdir/
