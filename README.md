@@ -1,7 +1,7 @@
 # Docker container for Game and Watch and RPi
 
 This repository will help you to build Docker image & container ready-to-use with Game and Watch under Rapsberry Pi.
-This will prevent you starting from scratch, facing building issues and save lot of time.
+This will prevent you starting from scratch, facing building issues and save you lot of time.
 
 
 ## Warnings for Raspberry Pi 3 users
