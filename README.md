@@ -57,8 +57,12 @@ $ docker build --build-arg USER_ID=$(id -u) --build-arg GROUP_ID=$(id -g) -t #YO
 Let's create container based on your newly created docker image.
 Change **#CONTAINER_NAME** with the desired one for your container name in the run cmd below.
 Your local host workdir folder will be mounted into /opt/workdir/ container folder.
-
-`$ docker container run -d -it --privileged --cap-add SYS_RAWIO --name #CONTAINER_NAME -v ~/workdir/:/opt/workdir #YOUR_DOCKER_REPO/#YOUR_IMAGE_NAME:latest bash`
+```
+$ docker container run -d -it --privileged --cap-add SYS_RAWIO \
+--name #CONTAINER_NAME \
+-v ~/workdir/:/opt/workdir \
+#YOUR_DOCKER_REPO/#YOUR_IMAGE_NAME:latest bash
+```
 
 Now let's connect to container console. You will be logged as root user and starting into /home/user folder.
 
